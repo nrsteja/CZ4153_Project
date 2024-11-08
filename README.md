@@ -1,7 +1,7 @@
 # **Decentralized Exchange (DEX) on Ethereum**
 ## ***Blockchain Hackers***
 
-This project is a minimal decentralized exchange (DEX) built on the Ethereum blockchain `(Sepolia Testnet)`, allowing users to trade tokens without relying on a centralized exchange and maintaining full control over their assets. The solution consists of two parts:
+This project is a minimal decentralized exchange (DEX) built on the Ethereum blockchain **(Sepolia Testnet)**, allowing users to trade tokens without relying on a centralized exchange and maintaining full control over their assets. The solution consists of two parts:
 
 - **Smart Contracts** - Deployed on the Sepolia testnet using Hardhat and Ignition.
 - **Frontend** - A React application for interacting with the DEX.
