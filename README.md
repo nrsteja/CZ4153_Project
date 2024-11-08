@@ -70,6 +70,7 @@ Once the environment variables are set up, deploy both the smart contracts (Toke
 ```bash
 npx hardhat ignition deploy ./ignition/modules/MyToken.js --network sepolia --verify
 ```
+
 2. **Update the contract addresses** for `MyToken`, `TokenA`, and `TokenB` (from the deployment step) inside the `./ignition/modules/OrderBooks.js` file.
 
 In the `./ignition/modules/OrderBooks.js` file, modify the contract address references like this:
@@ -105,6 +106,7 @@ export const SUPPORTED_TOKENS = [
   { name: 'TokenB', address: '<your_TokenB_contract_address>' }
 ];
 ```
+
 2. **Start the Frontend**
 
 Navigate to the frontend directory and start the React app:
@@ -114,3 +116,14 @@ cd webapp
 npm start
 ```
 The app should now be running locally. You can access it at `http://localhost:3000`.
+
+### **7. Interacting with the DEX**
+
+Once everything is deployed, you can:
+
+1. **Place buy and sell orders** using the web interface.
+2. **View and manage your active orders**.
+3. **Swap tokens** by matching orders.
+
+The frontend will allow you to interact with the deployed smart contracts, enabling seamless trading and token management directly through the DEX.
+
