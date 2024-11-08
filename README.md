@@ -82,7 +82,7 @@ export const SUPPORTED_TOKENS = [
   { name: 'TokenA', address: '<your_TokenA_contract_address>' },
   { name: 'TokenB', address: '<your_TokenB_contract_address>' }
 ];
-javascript```
+```
 
 3. Deploy the `OrderBooks` contract:
 
