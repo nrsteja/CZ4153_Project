@@ -133,3 +133,26 @@ The frontend will allow you to interact with the deployed smart contracts, enabl
 
 ![image](https://github.com/user-attachments/assets/03622888-3daa-4bed-aef3-5164d8c1cf4d)
 
+This dApp architecture enables decentralized token creation, token swapping, and balance management through a frontend (JavaScript-based) interface and integrated smart contracts on the Hardhat network.
+
+### System Components
+
+1. **User Interaction**:  
+   The user interacts with the dApp's frontend to perform actions such as minting new tokens, creating orders, and viewing balances.
+  
+2. **Wallet/Signer**:  
+   Metamask or similar wallets act as the user's signer for transaction authorization, enabling secure interaction with the blockchain.
+
+3. **DEX Contracts**:  
+   The decentralized exchange (DEX) contracts facilitate essential functions like minting tokens, executing token swaps, and updating balances. These contracts interact with the ERC20 contract to manage token approvals and transfers.
+
+4. **ERC20 Contract**:  
+   This standard contract handles token-specific actions, such as approving transactions and transferring tokens, ensuring compliance with the ERC20 token standard.
+
+5. **Hardhat Network**:  
+   The Hardhat network, running multiple nodes, serves as the blockchain test environment, simulating a live network for deploying and testing the smart contracts.
+
+### Summary
+
+This system provides a secure and efficient way to manage and trade tokens on a decentralized platform while giving users complete control of their assets through their wallets.
+
