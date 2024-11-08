@@ -40,4 +40,16 @@ Install the required dependencies for both the frontend and smart contracts:
 npm install
 ```
 
+### **3. Configure Environment Variables**
+
+You need to configure your environment variables to deploy to the Sepolia testnet. Create a `.env` file in the root of your project and add the following variables:
+
+```bash
+ALCHEMY_API_KEY=<your_alchemy_api_key>
+ETHERSCAN_API_KEY=<your_etherscan_api_key>
+SEPOLIA_PRIVATE_KEY=<your_sepolia_private_key>
+```
+- `ALCHEMY_API_KEY`: You can get an Alchemy API key by signing up at [Alchemy](https://www.alchemy.com).
+- `ETHERSCAN_API_KEY`: You can get an Etherscan API key by signing up at [Etherscan](https://etherscan.io).
+- `SEPOLIA_PRIVATE_KEY`: The private key of your wallet on the Sepolia testnet. Be careful to keep this private and never expose it in public repositories.
 
