@@ -60,7 +60,7 @@ To deploy and test your contracts in a local environment that simulates an Ether
 ```bash
 npx hardhat node
 ```
-This command launches a local Ethereum network at localhost:8545 with a set of pre-funded test accounts. This setup allows you to deploy and test your DEX application entirely on a private, simulated testnet.
+This command launches a local Ethereum network at `localhost:8545` with a set of pre-funded test accounts. This setup allows you to deploy and test your DEX application entirely on a private, simulated testnet.
 
 ### **5. Deploy the Smart Contracts**
 Once the environment variables are set up, deploy both the smart contracts (Token Generation contract and Order Management contract) to the Sepolia testnet using Hardhat:
@@ -89,4 +89,27 @@ export const SUPPORTED_TOKENS = [
 ```bash
 npx hardhat ignition deploy ./ignition/modules/OrderBooks.js --network sepolia --verify
 
+### **6. Frontend Setup**
 
+To configure the frontend to connect to the Sepolia testnet, follow these steps:
+
+1. In the `src/components/constants.js` file of your React app, update the `OrderBook` contract address and the contract addresses for `MyToken`, `TokenA`, and `TokenB` (from the deployment step) and the Sepolia network settings.
+
+```javascript
+export const CONTRACT_ADDRESS = '<your_OrderBooks_contract_address>'; // Main contract address
+
+export const SUPPORTED_TOKENS = [
+  { name: 'MyToken', address: '<your_MyToken_contract_address>' },
+  { name: 'TokenA', address: '<your_TokenA_contract_address>' },
+  { name: 'TokenB', address: '<your_TokenB_contract_address>' }
+];
+```
+2. **Start the Frontend**
+
+Navigate to the frontend directory and start the React app:
+
+```bash
+cd webapp
+npm start
+```
+The app should now be running locally. You can access it at `http://localhost:3000`.
