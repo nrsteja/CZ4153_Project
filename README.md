@@ -26,6 +26,18 @@ Before deploying the DEX, ensure you have the following installed:
 
 ### **1. Clone the Repository**
 
+
 ```bash
 git clone https://github.com/your-username/your-dex-project.git
 cd Blockchain_Hackers
+```
+
+### **2. Install Dependencies**
+
+Install the required dependencies for both the frontend and smart contracts:
+
+```bash
+npm install
+```
+
+
