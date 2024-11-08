@@ -1,4 +1,4 @@
-Decentralized Exchange (DEX) on Ethereum
+*Decentralized Exchange (DEX) on Ethereum*
 This project is a minimal decentralized exchange (DEX) built on the Ethereum blockchain. It allows users to trade tokens without relying on a centralized exchange, giving users full control over their assets. The solution consists of two parts:
 
 Smart Contracts - Deployed on the Sepolia testnet using Hardhat and Ignition.
