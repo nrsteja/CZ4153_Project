@@ -53,3 +53,29 @@ SEPOLIA_PRIVATE_KEY=<your_sepolia_private_key>
 - `ETHERSCAN_API_KEY`: You can get an Etherscan API key by signing up at [Etherscan](https://etherscan.io).
 - `SEPOLIA_PRIVATE_KEY`: The private key of your wallet on the Sepolia testnet. Be careful to keep this private and never expose it in public repositories.
 
+### **4. Run a Local Hardhat Network (for testing)**
+
+To deploy and test your contracts in a local environment that simulates an Ethereum testnet, you can use the Hardhat network.
+
+```bash
+npx hardhat node
+```
+This command launches a local Ethereum network at localhost:8545 with a set of pre-funded test accounts. This setup allows you to deploy and test your DEX application entirely on a private, simulated testnet.
+
+### **5. Deploy the Smart Contracts**
+Once the environment variables are set up, deploy both the smart contracts (Token Generation contract and Order Management contract) to the Sepolia testnet using Hardhat:
+
+1. Deploy the `MyToken` contract:
+
+```bash
+npx hardhat ignition deploy ./ignition/modules/MyToken.js --network sepolia --verify
+```
+2. Update the contract addresses for MyToken, TokenA, and TokenB (from the deployment step) inside the ./ignition/modules/OrderBooks.js file.
+
+3. Deploy the OrderBooks contract:
+4. 
+```bash
+npx hardhat ignition deploy ./ignition/modules/OrderBooks.js --network sepolia --verify
+```
+This will deploy your smart contracts, including OrderBooks, and print the contract addresses. Make sure your wallet has enough Sepolia ETH (you can get it from a Sepolia faucet).
+
