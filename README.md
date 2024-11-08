@@ -88,6 +88,7 @@ export const SUPPORTED_TOKENS = [
 
 ```bash
 npx hardhat ignition deploy ./ignition/modules/OrderBooks.js --network sepolia --verify
+```
 
 ### **6. Frontend Setup**
 
