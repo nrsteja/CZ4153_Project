@@ -1,4 +1,5 @@
 # **Decentralized Exchange (DEX) on Ethereum**
+## ***Blockchain Hackers***
 
 This project is a minimal decentralized exchange (DEX) built on the Ethereum blockchain, allowing users to trade tokens without relying on a centralized exchange and maintaining full control over their assets. The solution consists of two parts:
 
@@ -127,3 +128,5 @@ Once everything is deployed, you can:
 
 The frontend will allow you to interact with the deployed smart contracts, enabling seamless trading and token management directly through the DEX.
 
+
+### **8. Blockchain Hackers Architecture**
