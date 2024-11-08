@@ -1,0 +1,416 @@
+.App {
+	text-align: center;
+}
+
+.App-logo {
+	height: 40vmin;
+	pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+}
+
+/* .App-header {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+} */
+
+.App-link {
+	color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.App {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #f5f5f5;
+	font-family: 'Arial', sans-serif;
+}
+
+.content {
+	max-height: 80vh; /* Adjust as needed */
+	overflow-y: auto;
+	width: 100%;
+	padding: 20px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Scrollable table container */
+.table-container {
+	max-height: 250px; /* Adjust to limit the height of the order table itself */
+	overflow-y: auto;
+	width: 100%;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style adjustments for other elements to fit within the fixed height */
+.App-header {
+	background-color: #282c34;
+	padding: 20px;
+	color: white;
+	border-radius: 10px;
+	max-width: 800px;
+	width: 90%;
+}
+
+h1 {
+	font-size: 2.5rem;
+	margin-bottom: 10px;
+}
+
+h2 {
+	font-size: 1.8rem;
+	margin: 20px 0 10px;
+}
+
+p {
+	font-size: 1.1rem;
+	margin: 10px 0;
+}
+
+.success-message {
+	color: #61dafb;
+	font-weight: bold;
+}
+
+/* Button and Input Styles */
+button {
+	background-color: #61dafb;
+	color: black;
+	border: none;
+	padding: 10px 20px;
+	margin: 10px 0;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+button:hover {
+	background-color: #21a1f1;
+}
+
+select,
+input {
+	padding: 10px;
+	margin: 5px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	font-size: 1rem;
+}
+
+select:focus,
+input:focus {
+	outline: none;
+	border-color: #61dafb;
+}
+
+/* Order Form Styles */
+.order-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px 0;
+}
+
+/* Table Styles */
+.order-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 20px 0;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+/* .order-table h2 {
+	font-size: 1.8rem;
+	margin: 20px 0 10px;
+} */
+
+.order-table th,
+.order-table td {
+	padding: 12px;
+	text-align: center;
+	border: 1px solid #ddd;
+}
+
+.order-table th {
+	background-color: #61dafb;
+	color: black;
+}
+
+/* .order-table tr:nth-child(even) {
+	background-color: #f9bcbc;
+} */
+
+.order-table tr:hover {
+	background-color: #b0dff5;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+	h1 {
+		font-size: 2rem;
+	}
+
+	h2 {
+		font-size: 1.5rem;
+	}
+
+	button {
+		width: 100%;
+	}
+
+	select,
+	input {
+		width: 100%;
+	}
+}
+
+/* App.css */
+
+/* General button styling */
+.btn {
+	padding: 10px 20px;
+	margin: 5px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+/* Connect Wallet button */
+.btn-wallet {
+	background-color: #4caf50; /* Green */
+}
+.btn-asset {
+	background-color: #19bce9; /* Green */
+}
+.btn-wallet:hover {
+	background-color: #2d8231;
+}
+.btn-asset:hover {
+	background-color: #165f86;
+}
+
+/* Order buttons */
+.btn-order {
+	background-color: #2196f3; /* Blue */
+}
+.btn-order:hover {
+	background-color: #1e88e5;
+}
+
+/* Cancel button */
+.btn-cancel {
+	background-color: #f44336; /* Red */
+}
+.btn-cancel:hover {
+	background-color: #e53935;
+}
+
+/* Success message styling */
+.success-message {
+	color: #4caf50;
+	font-size: 14px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.show-fulfilled-button {
+	background-color: #009c82; /* Blue background */
+	color: white; /* White text */
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+	border: none; /* Remove default button border */
+	border-radius: 8px; /* Rounded corners */
+	padding: 10px 20px; /* Padding for the button */
+	font-size: 16px; /* Font size */
+	cursor: pointer; /* Change cursor on hover */
+	transition: 0.3s; /* Smooth transition */
+}
+
+.show-fulfilled-button:hover {
+	background-color: #00e2bd; /* Darker blue on hover */
+	transform: translateY(-2px); /* Lift effect */
+}
+
+.show-fulfilled-button.active {
+	background-color: #dc9238; /* Green background for active state */
+}
+
+.table-container {
+	max-height: 300px; /* Adjust height as needed */
+	overflow-y: auto;
+	width: 100%;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Toggle Header for Fulfilled/Unfulfilled Orders */
+/* Container for the toggle header */
+.toggle-header-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	width: 100%;
+}
+
+/* Styles for the toggle header */
+.toggle-header {
+	display: flex;
+	width: 100%; /* Make the toggle header fill the entire width */
+	border: 1px solid #61dafb; /* Add a border around the entire header */
+	border-radius: 8px; /* Optional: to round the corners */
+	overflow: hidden; /* Prevent overflow of content */
+}
+
+.toggle-option {
+	flex: 1; /* Allow options to take equal space */
+	padding: 10px 20px;
+	border-right: 1px solid #61dafb; /* Add border between options */
+	color: white;
+	cursor: pointer;
+	text-align: center;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Remove right border for the last option */
+.toggle-option:last-child {
+	border-right: none; /* Prevent double border on the last option */
+}
+
+/* Add styling for hover */
+.toggle-option:hover {
+	background-color: rgba(97, 218, 251, 0.1);
+}
+
+/* Styling for the active state */
+.toggle-option.active {
+	background-color: #61dafb;
+	color: #282c34;
+}
+
+.order-type-info {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	position: relative; /* Needed for tooltip positioning */
+}
+
+.info-icon {
+	font-size: 1.2rem;
+	cursor: pointer;
+	color: #61dafb;
+}
+
+/* Tooltip container styling */
+.tooltip {
+	position: absolute;
+	top: 50%;
+	left: 110%; /* Moves tooltip to the right of the icon */
+	transform: translateY(-50%);
+	width: 250px;
+	background-color: rgba(0, 0, 0, 0.9);
+	color: #fff;
+	padding: 12px;
+	border-radius: 8px;
+	font-size: 0.9rem;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	z-index: 10;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s ease, visibility 0.3s ease;
+	text-align: left;
+}
+
+/* Show tooltip on hover */
+.order-type-info:hover .tooltip {
+	opacity: 1;
+	visibility: visible;
+}
+
+/* Tooltip arrow */
+.tooltip::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: -6px; /* Position arrow on the left side */
+	transform: translateY(-50%);
+	border-width: 6px;
+	border-style: solid;
+	border-color: transparent rgba(0, 0, 0, 0.9) transparent transparent;
+}
+
+/* Bullet point styling inside tooltip */
+.tooltip ul {
+	margin: 0;
+	padding-left: 1.2rem;
+	list-style-type: disc;
+}
+
+.tooltip ul li {
+	margin-bottom: 8px;
+	line-height: 1.4;
+}
+
+.balance-items {
+	display: flex; /* Use flexbox for inline display */
+	justify-content: center; /* Center the flex items horizontally */
+	flex-wrap: wrap; /* Allows wrapping to a new line if needed */
+}
+
+.balance-item {
+	margin-right: 15px; /* Add space between balance items */
+	color: #4caf50; /* Change text color if needed */
+}
+.token-name {
+	color: #61dafb; /* Change this to your desired color */
+	font-weight: bold; /* Make the token name bold */
+}
+/* .balance-info {
+	color: #61dafb;
+	text-align: center; 
+} */
+.connected-account {
+	color: #61dafb; /* Change this to your desired color for the label */
+	font-weight: bold; /* Adjust the font weight if needed */
+}
+
+.account-address {
+	color: #4caf50; /* Change this to your desired color for the address */
+	font-weight: lighter; /* Make the address bold */
+}
+
+.centerTable {
+	margin: 0px auto;
+}
