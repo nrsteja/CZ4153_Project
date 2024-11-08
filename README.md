@@ -70,12 +70,22 @@ Once the environment variables are set up, deploy both the smart contracts (Toke
 ```bash
 npx hardhat ignition deploy ./ignition/modules/MyToken.js --network sepolia --verify
 ```
-2. Update the contract addresses for MyToken, TokenA, and TokenB (from the deployment step) inside the ./ignition/modules/OrderBooks.js file.
+2. **Update the contract addresses** for `MyToken`, `TokenA`, and `TokenB` (from the deployment step) inside the `./ignition/modules/OrderBooks.js` file.
 
-3. Deploy the OrderBooks contract:
-4. 
+In the `./ignition/modules/OrderBooks.js` file, modify the contract address references like this:
+
+```javascript
+export const CONTRACT_ADDRESS = '<your_OrderBooks_contract_address>'; // Main contract address
+
+export const SUPPORTED_TOKENS = [
+  { name: 'MyToken', address: '<your_MyToken_contract_address>' },
+  { name: 'TokenA', address: '<your_TokenA_contract_address>' },
+  { name: 'TokenB', address: '<your_TokenB_contract_address>' }
+];
+
+3. Deploy the `OrderBooks` contract:
+
 ```bash
 npx hardhat ignition deploy ./ignition/modules/OrderBooks.js --network sepolia --verify
-```
-This will deploy your smart contracts, including OrderBooks, and print the contract addresses. Make sure your wallet has enough Sepolia ETH (you can get it from a Sepolia faucet).
+
 
