@@ -130,3 +130,6 @@ The frontend will allow you to interact with the deployed smart contracts, enabl
 
 
 ### **8. Blockchain Hackers Architecture**
+
+![image](https://github.com/user-attachments/assets/03622888-3daa-4bed-aef3-5164d8c1cf4d)
+
