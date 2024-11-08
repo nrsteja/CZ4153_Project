@@ -13,17 +13,6 @@
 	}
 }
 
-/* .App-header {
-	background-color: #282c34;
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	font-size: calc(10px + 2vmin);
-	color: white;
-} */
-
 .App-link {
 	color: #61dafb;
 }
@@ -150,10 +139,6 @@ input:focus {
 	margin: 20px 0;
 	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-/* .order-table h2 {
-	font-size: 1.8rem;
-	margin: 20px 0 10px;
-} */
 
 .order-table th,
 .order-table td {
@@ -166,10 +151,6 @@ input:focus {
 	background-color: #61dafb;
 	color: black;
 }
-
-/* .order-table tr:nth-child(even) {
-	background-color: #f9bcbc;
-} */
 
 .order-table tr:hover {
 	background-color: #b0dff5;
@@ -397,10 +378,7 @@ input:focus {
 	color: #61dafb; /* Change this to your desired color */
 	font-weight: bold; /* Make the token name bold */
 }
-/* .balance-info {
-	color: #61dafb;
-	text-align: center; 
-} */
+
 .connected-account {
 	color: #61dafb; /* Change this to your desired color for the label */
 	font-weight: bold; /* Adjust the font weight if needed */
