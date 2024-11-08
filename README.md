@@ -184,7 +184,11 @@ Different Transactions supported by Blockchain Hackers:
 
 1. Unfilled Orders waiting for the other matching orders in the market
 
+![image](https://github.com/user-attachments/assets/b8e458cf-c87f-4b3b-999e-9d0ca4ee3f49)
+
 2. Fulfilled Orders to track the orders placed by the users so far
+
+![image](https://github.com/user-attachments/assets/1540841b-ff39-46c3-bbb7-b437879ce191)
 
 
 ### **9.5 View Account Balance**
@@ -195,12 +199,18 @@ Users are able to view their account balances for all the 3 Tokens: `MyToken`, `
 
 ### **9.6 Cancel Orders**
 
+![image](https://github.com/user-attachments/assets/1d9a3e1d-2892-41f3-9adc-06b99096292d)
+
 Users are able to cancel the orders they made which are not fulfilled or matched with other orders in the market. Only unfulfilled orders are matched.
 
 ### **9.7 Information Page**
 
+![image](https://github.com/user-attachments/assets/215bc901-70d5-4464-8930-cc85edb329ad)
+
 Information button is available to let users know about the application and how it works to avoid the confusions for the users when they place orders and improve the user-friendliness of the application.
 
 ### **9.8 Error Checking**
+
+![image](https://github.com/user-attachments/assets/9da3b037-1979-4068-b69e-1b7a91d6c7d5)
 
 Cannot place orders between same Token Types and also orders are not matched for the same user (i.e) 2 orders placed by the same users are always not matched with each other.
