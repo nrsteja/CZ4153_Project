@@ -29,7 +29,7 @@ Before deploying the DEX, ensure you have the following installed:
 
 
 ```bash
-git clone https://github.com/your-username/your-dex-project.git
+git clone https://github.com/nrsteja/CZ4153_Project.git
 cd Blockchain_Hackers
 ```
 
